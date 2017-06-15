@@ -11,7 +11,6 @@ class StockPicker
     while i < @values.size - 1 do
       j = 1
       while j < @values.size do
-        puts i, j
         if @values[i] - @values[j] > @earnings
           @earnings = @values[i] - @values[j]
           @couple = [i, j]
